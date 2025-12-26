@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Speaking Assessment</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="report-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-title">Student Speaking Assessment Report</div>
+      </header>
+
+      <!-- Student Info -->
+      <section class="student-info">
+        <div>
+          <h1 class="student-name" id="studentName">Student Name</h1>
+          <div class="test-date" id="testDate">Test Date</div>
+        </div>
+      </section>
+
+      <!-- Main Content  -->
+      <main class="content">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title">Summary of Scores</h2>
+        </div>
+
+        <!-- Score Display -->
+        <section class="score-display">
+          <!-- Overall Score Badge and Circle -->
+          <div class="score-badge">
+            <span class="badge-label">Overall Score</span>
+            <div class="score-circle">
+              <div class="score-value">
+                <span id="overallScore">5</span>
+                <span class="score-max">/9</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Bars -->
+          <div class="skills-bars">
+            <!-- Pronunciation -->
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Pronunciation</span>
+                <span class="skill-score"><span id="pronScore">0</span>/9</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill pronunciation"></div>
+              </div>
+            </div>
+
+            <!-- Fluency -->
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Fluency</span>
+                <span class="skill-score"><span id="fluScore">0</span>/9</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill fluency"></div>
+              </div>
+            </div>
+
+            <!-- Vocabulary -->
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Vocabulary</span>
+                <span class="skill-score"
+                  ><span id="vocabScore">0</span>/9</span
+                >
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill vocabulary"></div>
+              </div>
+            </div>
+
+            <!-- Grammar -->
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Grammar</span>
+                <span class="skill-score"><span id="gramScore">0</span>/9</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill grammar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bar Chart -->
+          <div class="chart-container">
+            <canvas id="scoreChart"></canvas>
+          </div>
+        </section>
+
+        <!-- Descriptive Feedback -->
+        <section class="feedback-section">
+          <h2 class="section-title">Descriptive Feedback</h2>
+
+          <div class="feedback-card">
+            <div class="feedback-title">Overall</div>
+            <div class="feedback-score">
+              Score: <span id="overallScoreDisplay"></span>/9
+            </div>
+            <div class="feedback-text" id="overallFeedback"></div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="feedback-title">Pronunciation</div>
+            <div class="feedback-score">
+              Score: <span id="pronScoreDisplay"></span>/9
+            </div>
+            <div class="feedback-text" id="pronFeedback"></div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="feedback-title">Fluency</div>
+            <div class="feedback-score">
+              Score: <span id="fluScoreDisplay"></span>/9
+            </div>
+            <div class="feedback-text" id="fluFeedback"></div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="feedback-title">Vocabulary</div>
+            <div class="feedback-score">
+              Score: <span id="vocabScoreDisplay"></span>/9
+            </div>
+            <div class="feedback-text" id="vocabFeedback"></div>
+          </div>
+
+          <div class="feedback-card">
+            <div class="feedback-title">Grammar</div>
+            <div class="feedback-score">
+              Score: <span id="gramScoreDisplay"></span>/9
+            </div>
+            <div class="feedback-text" id="gramFeedback"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

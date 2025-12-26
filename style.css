@@ -1,0 +1,279 @@
+
+   /* GLOBAL RESET & BASE */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+    padding: 30px;
+    --overall-color: #22c55e;
+}
+
+
+
+   /* MAIN CONTAINER */
+
+
+.report-container {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+
+
+   /* HEADER */
+
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(60, 59, 59);
+   
+}
+
+
+   /* STUDENT INFO */
+
+
+.student-info {
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;
+}
+
+.student-name {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 4px;
+   
+}
+
+.test-date {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 15px;
+   
+}
+
+
+
+
+   /* MAIN CONTENT */
+
+
+.content {
+    padding: 30px;
+}
+
+.section-header {
+    margin-bottom: 25px;
+    font-size: large;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: 400;
+    
+}
+
+
+
+   /* SCORE DISPLAY */
+
+
+.score-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 0 auto 40px;   /* left-right auto */
+    max-width: 1200px; 
+    background-color: #f3f4f6;
+}
+
+
+.score-badge {
+    width: 240px;
+}
+
+.score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: var(--overall-color);
+    border: 8px solid #5050516d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.score-value {
+    color: white;
+}
+
+
+.badge-label {
+    margin-left: 65px;
+}
+.score-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.score-max {
+    font-size: 22px;
+    color: white;
+}
+
+
+
+   /* SKILL BARS */
+
+
+.skills-bars {
+    max-width: 400px;
+    flex: 1;
+}
+
+.chart-container {
+    flex: 1;
+    height: 250px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skill-row {
+    margin-bottom: 18px;
+   
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.skill-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.skill-score {
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.skill-bar {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 6px;
+    transition: width 0.8s ease;
+}
+
+
+
+   /* FEEDBACK SECTION */
+
+
+.feedback-section {
+    margin-top: 10px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.feedback-card {
+    background: #f9fafb;
+    border-left: 4px solid #2563eb;
+    padding: 16px 18px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-score {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #9a9c9f;
+}
+
+.feedback-text {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+
+ 
+   /* RESPONSIVE (LIGHT, NO UI CHANGE)  */
+
+
+@media (max-width: 900px) {
+    .score-display {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .score-badge, .skills-bars, .chart-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .chart-container {
+        height: 300px;
+    }
+    .header-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(60, 59, 59);
+   
+}
+}
