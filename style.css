@@ -1,7 +1,4 @@
-
-   /* GLOBAL RESET & BASE */
-
-
+/* GLOBAL RESET & BASE */
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +14,7 @@ body {
 }
 
 
-
-   /* MAIN CONTAINER */
-
+/* MAIN CONTAINER */
 
 .report-container {
     max-width: 1200px;
@@ -32,9 +27,7 @@ body {
 
 
 
-   /* HEADER */
-
-
+/* HEADER */
 .header {
     display:flex;
     justify-content: center;
@@ -51,8 +44,7 @@ body {
 }
 
 
-   /* STUDENT INFO */
-
+/* STUDENT INFO */
 
 .student-info {
     padding: 25px 30px;
@@ -76,10 +68,7 @@ body {
 }
 
 
-
-
-   /* MAIN CONTENT */
-
+/* MAIN CONTENT */
 
 .content {
     padding: 30px;
@@ -97,9 +86,7 @@ body {
 }
 
 
-
-   /* SCORE DISPLAY */
-
+/* SCORE DISPLAY */
 
 .score-display {
     display: flex;
@@ -151,9 +138,7 @@ body {
 }
 
 
-
-   /* SKILL BARS */
-
+/* SKILL BARS */
 
 .skills-bars {
     max-width: 400px;
@@ -209,8 +194,7 @@ body {
 
 
 
-   /* FEEDBACK SECTION */
-
+/* FEEDBACK SECTION */
 
 .feedback-section {
     margin-top: 10px;
@@ -252,9 +236,7 @@ body {
 }
 
 
- 
-   /* RESPONSIVE (LIGHT, NO UI CHANGE)  */
-
+ /* RESPONSIVE (LIGHT, NO UI CHANGE)  */
 
 @media (max-width: 900px) {
     .score-display {
